@@ -13,7 +13,7 @@ class YellowCircles(QMainWindow):
         uic.loadUi('UI.ui', self)
 
         self.do_paint = False
-        self.circle_list = []
+        self.circle_list = list()
 
         self.pushButton.clicked.connect(self.create)
 
